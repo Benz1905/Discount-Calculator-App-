@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="original pirce"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/oripirce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="percent off (%)"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/percentoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="number"/>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <CheckBox
+           android:id="@+id/tax"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Include Tax 7% "
+           android:layout_marginLeft="5dp"/>
+       <Button
+           android:id="@+id/CalCulateBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="CALCULATE"
+           android:layout_alignParentRight="true"/>
+   </RelativeLayout>
+    <TextView
+        android:id="@+id/outputTx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:background="#7DCEA0"/>
+
+
+
+
+</LinearLayout>
